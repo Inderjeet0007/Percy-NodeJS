@@ -25,8 +25,8 @@ const spawn = require('child_process').spawn;
     await driver.get("http://localhost:3000/webPageDemo.html");
     await percySnapshot(driver, 'Form loaded empty');
 
-    await driver.findElement(By.id('user')).sendKeys('inderjeet.s');
-    await driver.findElement(By.id('pass')).sendKeys('Super#Pass');
+    await driver.findElement(By.id('user')).sendKeys('inderjeets@browserstack.com');
+    await driver.findElement(By.id('pass')).sendKeys('Super#Password');
     await percySnapshot(driver, 'Creds filled');
   } catch (error) {
     console.log(error);
