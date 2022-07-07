@@ -19,14 +19,14 @@ const spawn = require('child_process').spawn;
 // }
 
 (async function() {
-  let driver = await new Builder().forBrowser('firefox').build();
+  let driver = await new Builder().forBrowser('chrome').build();
 
   try {
     await driver.get("http://localhost:3000/webPageDemo.html");
     await percySnapshot(driver, 'Form loaded empty');
 
-    await driver.findElement(By.id('user')).sendKeys('inderjeet.s');
-    await driver.findElement(By.id('pass')).sendKeys('Super#Password');
+    await driver.findElement(By.id('user')).sendKeys('inderjeets');
+    await driver.findElement(By.id('pass')).sendKeys('Super#Password!');
     await percySnapshot(driver, 'Creds filled');
   } catch (error) {
     console.log(error);
