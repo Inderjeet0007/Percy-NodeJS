@@ -12,7 +12,7 @@
   "author": "Perceptual Inc.",
   "license": "MIT",
   "scripts": {
-    "test": "percy exec -- node tests/test.js"
+    "test": "cross-env PERCY_TOKEN=392163cba92bc76c1939f2ba8476cac5b8d33d36d36f41beceeea31fa397f2fd percy exec -- node tests/loginTest.js"
   },
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.42",
@@ -22,5 +22,8 @@
     "selenium-webdriver": "^4.0.0-beta.2",
     "todomvc-app-css": "^2.2.0",
     "todomvc-common": "^1.0.5"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }
