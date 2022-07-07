@@ -24,7 +24,7 @@ const { elementIfExists } = require('wd/lib/commands');
   let options = {
     widths:[599,899,1200]
   }
-
+ 
   try {
 
     await driver.get("http://forum.thirdbridge.com/");
