@@ -12,7 +12,7 @@
   "author": "Perceptual Inc.",
   "license": "MIT",
   "scripts": {
-    "test": "cross-env PERCY_TOKEN=65d8d4b334e3f0df8941fd3d48aef8ff5ae212af982cc9193e1f09dff0c7a7d5 percy exec -- node tests/loginTest.js"
+    "test": "cross-env PERCY_TOKEN=392163cba92bc76c1939f2ba8476cac5b8d33d36d36f41beceeea31fa397f2fd percy exec -- node tests/loginTest.js"
   },
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.42",
