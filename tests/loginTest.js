@@ -22,11 +22,13 @@ const { elementIfExists } = require('wd/lib/commands');
 (async function() {
   let driver = await new Builder().forBrowser('firefox').build();
   let options = {
-    widths:[599,899,1200]
+    widths:[899]
   }
 
   try {
 
+    // await driver.manage().window().setSize(899,899)
+    await driver.manage().window().setRect({width: 899, height: 899})
     await driver.get("http://forum.thirdbridge.com/");
     // await percySnapshot(driver, 'Form loaded empty');
 

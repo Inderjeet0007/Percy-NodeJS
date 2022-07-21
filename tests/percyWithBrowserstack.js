@@ -45,7 +45,7 @@ const { elementIfExists } = require('wd/lib/commands');
 
   try {
     await driver.get("https://www.google.com");
-    await driver.sleep(5000);
+    await driver.sleep(5000); 
     await percySnapshot(driver, 'Before accepting google cookie pop-up');
     // await driver.findElement(By.xpath('(//input[@name="btnI"])[2]')).click();
     await driver.findElement(By.id('L2AGLb')).click();
